@@ -362,6 +362,31 @@ textarea { resize: vertical; }
 .workflow-copy h3 { margin: 0 0 2px; font-size: 14px; font-weight: 700; }
 .workflow-copy p { margin: 0; font-size: 13px; color: var(--ink-soft); line-height: 1.4; }
 
+/* Truck banner (form page) + CTA band */
+.truck-banner {
+  max-width: 712px;
+  margin: 24px auto 0;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  text-decoration: none;
+  color: var(--ink);
+  overflow: hidden;
+  width: calc(100% - 48px);
+}
+.truck-banner img { width: 150px; height: 90px; object-fit: cover; display: block; flex: none; }
+.truck-banner-text { font-size: 14px; color: var(--ink-soft); line-height: 1.4; flex: 1; padding: 8px 0; }
+.truck-banner-text b { display: block; color: var(--ink); font-size: 15px; font-weight: 500; margin-bottom: 2px; }
+.truck-banner-link { color: var(--accent-dark); font-weight: 500; font-size: 13px; padding-right: 18px; white-space: nowrap; }
+.truck-banner:hover { border-color: var(--accent); }
+.cta-band { background: var(--accent-dark); text-align: center; padding: 56px 24px; margin-top: 48px; }
+.cta-band h2 { color: #fff; margin: 0 0 20px; font-size: 28px; font-weight: 500; }
+.cta-band .hero-btn { display: inline-block; }
+
 /* Header CTA + showcase */
 html { scroll-behavior: smooth; }
 .app-header { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
@@ -491,6 +516,9 @@ html { scroll-behavior: smooth; }
   .tier-card:nth-child(even) img { order: 0; }
   .timeline { grid-template-columns: repeat(2, 1fr); }
   .header-cta { display: none; }
+  .truck-banner { flex-wrap: wrap; }
+  .truck-banner img { width: 100%; height: 140px; }
+  .truck-banner-text, .truck-banner-link { padding: 0 16px 12px; }
   .asset-grid { grid-template-columns: 1fr; }
   .field-row { grid-template-columns: 1fr; }
   .step { padding: 24px; }
