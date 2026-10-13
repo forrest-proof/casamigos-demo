@@ -7,9 +7,7 @@
   <title>Casamigos Surf Truck Booking Request</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 
@@ -26,287 +24,288 @@
 
   <div class="form-wrap">
 
-  <a class="truck-banner" href="truck.html">
-    <img src="images/hero.jpg" alt="Casamigos Surf Truck, 1968 Ford Bronco" />
-    <span class="truck-banner-text">
-      <b>New: the Casamigos Surf Truck</b>
-      A 1968 Ford Bronco mobile margarita bar. See photos, tiers and how it works.
-    </span>
-    <span class="truck-banner-link">View details &rarr;</span>
-  </a>
+    <a class="truck-banner" href="truck.html">
+      <img src="images/hero.jpg" alt="Casamigos Surf Truck" />
+      <span class="truck-banner-text">
+        <b>New: the Casamigos Surf Truck</b>
+        A vintage mobile margarita bar. See photos, tiers and how it works.
+      </span>
+      <span class="truck-banner-link">View details &rarr;</span>
+    </a>
 
-  <div class="progress-wrap">
-    <div class="progress-track">
-      <div class="progress-fill" id="progressFill"></div>
+    <div class="progress-wrap">
+      <div class="progress-track">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+      <div class="step-label" id="stepLabel">Step 1 of 5</div>
     </div>
-    <div class="step-label" id="stepLabel">Step 1 of 5</div>
-  </div>
 
-  <main class="form-shell">
+    <main class="form-shell">
 
-    <!-- STEP 1: MARKET & DATES -->
-    <section class="step active" data-step="1">
-      <h1>Market &amp; dates</h1>
-      <p class="step-desc">Where is the Surf Truck headed, and when do you need it?</p>
-
-      <div class="field">
-        <label for="market">What market will the Surf Truck be going to?</label>
-        <input type="text" id="market" placeholder="e.g. Austin, TX" />
-      </div>
-
-      <div class="field-row">
-        <div class="field">
-          <label for="startDate">First date requested</label>
-          <input type="date" id="startDate" />
-        </div>
-        <div class="field">
-          <label for="endDate">Last date requested</label>
-          <input type="date" id="endDate" />
-        </div>
-      </div>
-
-      <div class="field">
-        <label>Are your dates flexible?</label>
-        <div class="radio-row">
-          <label class="radio-pill"><input type="radio" name="flexible" value="Firm dates"> Firm dates</label>
-          <label class="radio-pill"><input type="radio" name="flexible" value="Flexible by a few days"> Flexible by a few
-            days</label>
-          <label class="radio-pill"><input type="radio" name="flexible" value="Very flexible"> Very flexible</label>
-        </div>
-      </div>
-    </section>
-
-    <!-- STEP 2: USAGE -->
-    <section class="step" data-step="2">
-      <h1>How will the Surf Truck be used?</h1>
-      <p class="step-desc">Pick the closest fit. This helps us plan staffing and logistics.</p>
-
-      <div class="asset-grid">
-        <div class="asset-card" data-use="Commercial Blitzing">
-          <div class="asset-icon">🏪</div>
-          <h3>Commercial Blitzing</h3>
-          <p class="asset-desc">Multi-stop route to accounts, bars, restaurants and retailers.</p>
-        </div>
-        <div class="asset-card" data-use="Small Event">
-          <div class="asset-icon">🥂</div>
-          <h3>Small Event</h3>
-          <p class="asset-desc">Private party, account tasting, or local gathering.</p>
-        </div>
-        <div class="asset-card" data-use="Large Event">
-          <div class="asset-icon">🎪</div>
-          <h3>Large Event</h3>
-          <p class="asset-desc">Festival, concert, sponsorship or major public activation.</p>
-        </div>
-      </div>
-
-      <div class="field-group" id="usageDetails" hidden>
-        <h2 class="subsection-heading">Tell us more</h2>
+      <!-- STEP 1: MARKET & DATES -->
+      <section class="step active" data-step="1">
+        <h1>Market &amp; dates</h1>
+        <p class="step-desc">Where is the Surf Truck headed, and when do you need it?</p>
 
         <div class="field">
-          <label for="eventName" id="eventNameLabel">Event name</label>
-          <input type="text" id="eventName" placeholder="e.g. Austin Food + Wine Festival" />
-        </div>
-
-        <div class="field" data-use="Small Event,Large Event">
-          <label for="attendance">Expected attendance</label>
-          <select id="attendance">
-            <option value="">Select one</option>
-            <option>Under 100</option>
-            <option>100–500</option>
-            <option>500–2,000</option>
-            <option>2,000–10,000</option>
-            <option>10,000+</option>
-          </select>
-        </div>
-
-        <div class="field" data-use="Commercial Blitzing">
-          <label for="stops"># of stops planned (multi-stop route)</label>
-          <input type="number" id="stops" min="1" placeholder="e.g. 8" />
+          <label for="market">What market will the Surf Truck be going to?</label>
+          <input type="text" id="market" placeholder="e.g. Austin, TX" />
         </div>
 
         <div class="field-row">
           <div class="field">
-            <label for="dailyStart">Daily start time</label>
-            <input type="time" id="dailyStart" value="12:00" />
+            <label for="startDate">First date requested</label>
+            <input type="date" id="startDate" />
           </div>
           <div class="field">
-            <label for="dailyEnd">Daily end time</label>
-            <input type="time" id="dailyEnd" value="18:00" />
+            <label for="endDate">Last date requested</label>
+            <input type="date" id="endDate" />
           </div>
         </div>
 
-        <div class="field" data-use="Small Event,Large Event">
-          <label>Will the truck be parked in a fixed spot or moving?</label>
-          <div class="radio-row">
-            <label class="radio-pill"><input type="radio" name="mobility" value="Stationary"> Stationary</label>
-            <label class="radio-pill"><input type="radio" name="mobility" value="Moving"> Moving</label>
-            <label class="radio-pill"><input type="radio" name="mobility" value="Both"> Both</label>
-          </div>
-        </div>
-
-        <div class="field" data-use="Small Event,Large Event">
-          <label>Is this a public or private event?</label>
-          <div class="radio-row">
-            <label class="radio-pill"><input type="radio" name="publicPrivate" value="Public"> Public</label>
-            <label class="radio-pill"><input type="radio" name="publicPrivate" value="Private"> Private</label>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- STEP 3: LOGISTICS -->
-    <section class="step" data-step="3">
-      <h1>Logistics</h1>
-      <p class="step-desc">A few details to make sure the truck arrives ready to go.</p>
-
-      <div class="field">
-        <label>Is there a safe, legal parking spot for the truck at each stop or location?</label>
-        <div class="radio-row">
-          <label class="radio-pill"><input type="radio" name="parking" value="Yes"> Yes</label>
-          <label class="radio-pill"><input type="radio" name="parking" value="No"> No</label>
-          <label class="radio-pill"><input type="radio" name="parking" value="Not sure"> Not sure</label>
-        </div>
-      </div>
-
-      <div class="field">
-        <label>Are any permits, event passes or venue approvals required?</label>
-        <div class="radio-row">
-          <label class="radio-pill"><input type="radio" name="permits" value="Yes"> Yes</label>
-          <label class="radio-pill"><input type="radio" name="permits" value="No"> No</label>
-          <label class="radio-pill"><input type="radio" name="permits" value="Not sure"> Not sure</label>
-        </div>
-      </div>
-
-      <div class="field">
-        <label>Will samples be poured or served from the truck?</label>
-        <div class="radio-row">
-          <label class="radio-pill"><input type="radio" name="sampling" value="Yes"> Yes</label>
-          <label class="radio-pill"><input type="radio" name="sampling" value="No"> No</label>
-          <label class="radio-pill"><input type="radio" name="sampling" value="Not sure"> Not sure</label>
-        </div>
-      </div>
-
-      <div class="field">
-        <label>Who will staff the truck on-site?</label>
-        <div class="radio-row">
-          <label class="radio-pill"><input type="radio" name="staffing" value="Market team"> Market team</label>
-          <label class="radio-pill"><input type="radio" name="staffing" value="Brand ambassadors / agency"> Brand
-            ambassadors / agency</label>
-          <label class="radio-pill"><input type="radio" name="staffing" value="Need help"> Need help</label>
-        </div>
-      </div>
-
-      <div class="field">
-        <label for="deliveryAddress">Delivery / pickup address (optional)</label>
-        <input type="text" id="deliveryAddress" placeholder="Street address, city, state" />
-      </div>
-
-      <div class="field">
-        <label for="notes">Additional notes or special requests</label>
-        <textarea id="notes" rows="3" placeholder="Anything else the team should know"></textarea>
-      </div>
-    </section>
-
-    <!-- STEP 4: CONTACT -->
-    <section class="step" data-step="4">
-      <h1>Primary contact</h1>
-      <p class="step-desc">Who is the primary point of contact for the market?</p>
-
-      <div class="field">
-        <label for="pocName">Primary point of contact</label>
-        <input type="text" id="pocName" placeholder="Jane Doe" />
-      </div>
-
-      <div class="field-row">
         <div class="field">
-          <label for="pocEmail">Point of contact email</label>
-          <input type="email" id="pocEmail" placeholder="jane@example.com" />
+          <label>Are your dates flexible?</label>
+          <div class="radio-row">
+            <label class="radio-pill"><input type="radio" name="flexible" value="Firm dates"> Firm dates</label>
+            <label class="radio-pill"><input type="radio" name="flexible" value="Flexible by a few days"> Flexible by a
+              few
+              days</label>
+            <label class="radio-pill"><input type="radio" name="flexible" value="Very flexible"> Very flexible</label>
+          </div>
         </div>
+      </section>
+
+      <!-- STEP 2: USAGE -->
+      <section class="step" data-step="2">
+        <h1>How will the Surf Truck be used?</h1>
+        <p class="step-desc">Pick the closest fit. This helps us plan staffing and logistics.</p>
+
+        <div class="asset-grid">
+          <div class="asset-card" data-use="Commercial Blitzing">
+            <div class="asset-icon">🏪</div>
+            <h3>Commercial Blitzing</h3>
+            <p class="asset-desc">Multi-stop route to accounts, bars, restaurants and retailers.</p>
+          </div>
+          <div class="asset-card" data-use="Small Event">
+            <div class="asset-icon">🥂</div>
+            <h3>Small Event</h3>
+            <p class="asset-desc">Private party, account tasting, or local gathering.</p>
+          </div>
+          <div class="asset-card" data-use="Large Event">
+            <div class="asset-icon">🎪</div>
+            <h3>Large Event</h3>
+            <p class="asset-desc">Festival, concert, sponsorship or major public activation.</p>
+          </div>
+        </div>
+
+        <div class="field-group" id="usageDetails" hidden>
+          <h2 class="subsection-heading">Tell us more</h2>
+
+          <div class="field">
+            <label for="eventName" id="eventNameLabel">Event name</label>
+            <input type="text" id="eventName" placeholder="e.g. Austin Food + Wine Festival" />
+          </div>
+
+          <div class="field" data-use="Small Event,Large Event">
+            <label for="attendance">Expected attendance</label>
+            <select id="attendance">
+              <option value="">Select one</option>
+              <option>Under 100</option>
+              <option>100–500</option>
+              <option>500–2,000</option>
+              <option>2,000–10,000</option>
+              <option>10,000+</option>
+            </select>
+          </div>
+
+          <div class="field" data-use="Commercial Blitzing">
+            <label for="stops"># of stops planned (multi-stop route)</label>
+            <input type="number" id="stops" min="1" placeholder="e.g. 8" />
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="dailyStart">Daily start time</label>
+              <input type="time" id="dailyStart" value="12:00" />
+            </div>
+            <div class="field">
+              <label for="dailyEnd">Daily end time</label>
+              <input type="time" id="dailyEnd" value="18:00" />
+            </div>
+          </div>
+
+          <div class="field" data-use="Small Event,Large Event">
+            <label>Will the truck be parked in a fixed spot or moving?</label>
+            <div class="radio-row">
+              <label class="radio-pill"><input type="radio" name="mobility" value="Stationary"> Stationary</label>
+              <label class="radio-pill"><input type="radio" name="mobility" value="Moving"> Moving</label>
+              <label class="radio-pill"><input type="radio" name="mobility" value="Both"> Both</label>
+            </div>
+          </div>
+
+          <div class="field" data-use="Small Event,Large Event">
+            <label>Is this a public or private event?</label>
+            <div class="radio-row">
+              <label class="radio-pill"><input type="radio" name="publicPrivate" value="Public"> Public</label>
+              <label class="radio-pill"><input type="radio" name="publicPrivate" value="Private"> Private</label>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STEP 3: LOGISTICS -->
+      <section class="step" data-step="3">
+        <h1>Logistics</h1>
+        <p class="step-desc">A few details to make sure the truck arrives ready to go.</p>
+
         <div class="field">
-          <label for="pocPhone">Point of contact phone number</label>
-          <input type="tel" id="pocPhone" placeholder="(555) 555-5555" />
+          <label>Is there a safe, legal parking spot for the truck at each stop or location?</label>
+          <div class="radio-row">
+            <label class="radio-pill"><input type="radio" name="parking" value="Yes"> Yes</label>
+            <label class="radio-pill"><input type="radio" name="parking" value="No"> No</label>
+            <label class="radio-pill"><input type="radio" name="parking" value="Not sure"> Not sure</label>
+          </div>
         </div>
+
+        <div class="field">
+          <label>Are any permits, event passes or venue approvals required?</label>
+          <div class="radio-row">
+            <label class="radio-pill"><input type="radio" name="permits" value="Yes"> Yes</label>
+            <label class="radio-pill"><input type="radio" name="permits" value="No"> No</label>
+            <label class="radio-pill"><input type="radio" name="permits" value="Not sure"> Not sure</label>
+          </div>
+        </div>
+
+        <div class="field">
+          <label>Will samples be poured or served from the truck?</label>
+          <div class="radio-row">
+            <label class="radio-pill"><input type="radio" name="sampling" value="Yes"> Yes</label>
+            <label class="radio-pill"><input type="radio" name="sampling" value="No"> No</label>
+            <label class="radio-pill"><input type="radio" name="sampling" value="Not sure"> Not sure</label>
+          </div>
+        </div>
+
+        <div class="field">
+          <label>Who will staff the truck on-site?</label>
+          <div class="radio-row">
+            <label class="radio-pill"><input type="radio" name="staffing" value="Market team"> Market team</label>
+            <label class="radio-pill"><input type="radio" name="staffing" value="Brand ambassadors / agency"> Brand
+              ambassadors / agency</label>
+            <label class="radio-pill"><input type="radio" name="staffing" value="Need help"> Need help</label>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="deliveryAddress">Event Address</label>
+          <input type="text" id="deliveryAddress" placeholder="Street address, city, state" />
+        </div>
+
+        <div class="field">
+          <label for="notes">Additional notes or special requests</label>
+          <textarea id="notes" rows="3" placeholder="Anything else the team should know"></textarea>
+        </div>
+      </section>
+
+      <!-- STEP 4: CONTACT -->
+      <section class="step" data-step="4">
+        <h1>Primary contact</h1>
+        <p class="step-desc">Who is the primary point of contact for the market?</p>
+
+        <div class="field">
+          <label for="pocName">Primary point of contact</label>
+          <input type="text" id="pocName" placeholder="Jane Doe" />
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="pocEmail">Point of contact email</label>
+            <input type="email" id="pocEmail" placeholder="jane@example.com" />
+          </div>
+          <div class="field">
+            <label for="pocPhone">Point of contact phone number</label>
+            <input type="tel" id="pocPhone" placeholder="(555) 555-5555" />
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="pocRole">Role / title (optional)</label>
+          <input type="text" id="pocRole" placeholder="e.g. Market Manager" />
+        </div>
+      </section>
+
+      <!-- STEP 5: REVIEW -->
+      <section class="step" data-step="5">
+        <h1>Review &amp; submit</h1>
+        <p class="step-desc">Confirm the details below before sending your request.</p>
+
+        <div class="review-card">
+          <div class="review-row"><span>Market</span><span id="rvMarket">—</span></div>
+          <div class="review-row"><span>Dates</span><span id="rvDates">—</span></div>
+          <div class="review-row"><span>Duration</span><span id="rvDuration">—</span></div>
+          <div class="review-row"><span>Usage</span><span id="rvUse">—</span></div>
+          <div class="review-row"><span>Contact</span><span id="rvContact">—</span></div>
+          <div class="review-row"><span>Phone</span><span id="rvPhone">—</span></div>
+        </div>
+
+        <button class="btn-primary btn-submit" id="submitBtn">Request the Surf Truck</button>
+      </section>
+
+      <!-- CONFIRMATION -->
+      <section class="step" data-step="confirm">
+        <div class="confirm-wrap">
+          <div class="confirm-check">✓</div>
+          <h1>Your request has been submitted</h1>
+          <p class="step-desc">Submitted <span id="confirmTime"></span>. The team will follow up at
+            <span id="confirmEmail">your email</span> with next steps.
+          </p>
+        </div>
+
+        <ol class="workflow-tracker">
+          <li class="workflow-step done">
+            <span class="workflow-dot">1</span>
+            <div class="workflow-copy">
+              <h3>Submitted</h3>
+              <p>Your request has been received and logged.</p>
+            </div>
+          </li>
+          <li class="workflow-step">
+            <span class="workflow-dot">2</span>
+            <div class="workflow-copy">
+              <h3>Review</h3>
+              <p>The team checks truck availability and logistics for your market and dates.</p>
+            </div>
+          </li>
+          <li class="workflow-step">
+            <span class="workflow-dot">3</span>
+            <div class="workflow-copy">
+              <h3>Approved &amp; scheduled</h3>
+              <p>Your booking is confirmed and added to the Surf Truck calendar.</p>
+            </div>
+          </li>
+          <li class="workflow-step">
+            <span class="workflow-dot">4</span>
+            <div class="workflow-copy">
+              <h3>Delivery &amp; execution</h3>
+              <p>The truck arrives in market and your activation runs.</p>
+            </div>
+          </li>
+          <li class="workflow-step">
+            <span class="workflow-dot">5</span>
+            <div class="workflow-copy">
+              <h3>Return &amp; recap</h3>
+              <p>The truck is returned and a post-activation recap is shared.</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <!-- NAV -->
+      <div class="nav-row">
+        <button class="btn-secondary" id="backBtn">Back</button>
+        <button class="btn-primary" id="nextBtn">Next</button>
       </div>
 
-      <div class="field">
-        <label for="pocRole">Role / title (optional)</label>
-        <input type="text" id="pocRole" placeholder="e.g. Market Manager" />
-      </div>
-    </section>
-
-    <!-- STEP 5: REVIEW -->
-    <section class="step" data-step="5">
-      <h1>Review &amp; submit</h1>
-      <p class="step-desc">Confirm the details below before sending your request.</p>
-
-      <div class="review-card">
-        <div class="review-row"><span>Market</span><span id="rvMarket">—</span></div>
-        <div class="review-row"><span>Dates</span><span id="rvDates">—</span></div>
-        <div class="review-row"><span>Duration</span><span id="rvDuration">—</span></div>
-        <div class="review-row"><span>Usage</span><span id="rvUse">—</span></div>
-        <div class="review-row"><span>Contact</span><span id="rvContact">—</span></div>
-        <div class="review-row"><span>Phone</span><span id="rvPhone">—</span></div>
-      </div>
-
-      <button class="btn-primary btn-submit" id="submitBtn">Request the Surf Truck</button>
-    </section>
-
-    <!-- CONFIRMATION -->
-    <section class="step" data-step="confirm">
-      <div class="confirm-wrap">
-        <div class="confirm-check">✓</div>
-        <h1>Your request has been submitted</h1>
-        <p class="step-desc">Submitted <span id="confirmTime"></span>. The team will follow up at
-          <span id="confirmEmail">your email</span> with next steps.
-        </p>
-      </div>
-
-      <ol class="workflow-tracker">
-        <li class="workflow-step done">
-          <span class="workflow-dot">1</span>
-          <div class="workflow-copy">
-            <h3>Submitted</h3>
-            <p>Your request has been received and logged.</p>
-          </div>
-        </li>
-        <li class="workflow-step">
-          <span class="workflow-dot">2</span>
-          <div class="workflow-copy">
-            <h3>Review</h3>
-            <p>The team checks truck availability and logistics for your market and dates.</p>
-          </div>
-        </li>
-        <li class="workflow-step">
-          <span class="workflow-dot">3</span>
-          <div class="workflow-copy">
-            <h3>Approved &amp; scheduled</h3>
-            <p>Your booking is confirmed and added to the Surf Truck calendar.</p>
-          </div>
-        </li>
-        <li class="workflow-step">
-          <span class="workflow-dot">4</span>
-          <div class="workflow-copy">
-            <h3>Delivery &amp; execution</h3>
-            <p>The truck arrives in market and your activation runs.</p>
-          </div>
-        </li>
-        <li class="workflow-step">
-          <span class="workflow-dot">5</span>
-          <div class="workflow-copy">
-            <h3>Return &amp; recap</h3>
-            <p>The truck is returned and a post-activation recap is shared.</p>
-          </div>
-        </li>
-      </ol>
-    </section>
-
-    <!-- NAV -->
-    <div class="nav-row">
-      <button class="btn-secondary" id="backBtn">Back</button>
-      <button class="btn-primary" id="nextBtn">Next</button>
-    </div>
-
-  </main>
+    </main>
 
   </div>
 
